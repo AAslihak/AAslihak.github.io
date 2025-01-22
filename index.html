@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal website of Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Name - Home</title>
+
+  <!-- 
+    Optional: If you want a favicon, place a .ico or .png in the root folder
+    and uncomment this line, replacing 'favicon.ico' with your file:
+    <link rel="icon" href="favicon.ico" />
+  -->
+
+  <!-- Simple CSS reset or styling -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, nav, main, footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em 0;
+      background-color: #282c34;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin: 1em 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    main {
+      background-color: white;
+      padding: 2em;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.85em;
+      margin: 2em 0;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+      header, nav, main, footer {
+        padding: 0.5em;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Welcome to my GitHub Pages website!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m <strong>Your Name</strong>, a [describe yourself: student, 
+        developer, hobbyist, etc.]. I'm excited to share my projects and experiences 
+        with you on this personal website.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Project 1:</strong> 
+          <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+          <strong>Project 2:</strong> 
+          <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+        </li>
+      </ul>
+      <p>Check out my GitHub profile for more: 
+        <a href="https://github.com/username" target="_blank">@username</a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach out:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">Your Profile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Your Name. All rights reserved.
+  </footer>
+
+  <!-- Simple script to keep footer year up to date -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
